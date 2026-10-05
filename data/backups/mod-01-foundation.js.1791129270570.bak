@@ -1,0 +1,344 @@
+// data/modules/mod-01-foundation.js - Chuyên đề 1: Củng cố Cửu chương & Kỹ năng Tính toán Nền tảng (Tuần 1 - 3)
+
+export const MODULE_01_FOUNDATION = {
+  id: "mod-01-foundation",
+  title: "Củng cố Cửu chương & Kỹ năng Tính toán Tiểu học",
+  focus: "Bảng cửu chương nhẩm nhanh, phân số cơ bản, thứ tự ưu tiên phép tính và bài chẩn đoán đầu vào",
+  weeks: [
+    {
+      id: "w01",
+      number: 1,
+      title: "Bảng Cửu Chương & Phản Xạ Nhẩm Nhanh",
+      goal: "Làm chủ bảng cửu chương 2 đến 9, nắm bản chất phép nhân là cộng lặp và tính chất phân phối.",
+      diagnosticPretest: {
+        title: "Bài Chẩn đoán Năng lực Đầu vào (Pre-Test)",
+        description: "Làm 5 câu ngắn không bấm giờ để xác định vùng kiến thức cần bổ trợ.",
+        questions: [
+          {
+            id: "MATH6-W01-PRE-01",
+            q: "Tính nhẩm: 7 × 8 = ?",
+            answer: "56",
+            type: "number",
+            explanation: "7 × 8 = 56. Mẹo: 7 × 7 = 49, thêm 7 là 56."
+          },
+          {
+            id: "MATH6-W01-PRE-02",
+            q: "Tính nhanh: 15 × 6 = ?",
+            answer: "90",
+            type: "number",
+            explanation: "15 × 6 = (15 × 2) × 3 = 30 × 3 = 90."
+          },
+          {
+            id: "MATH6-W01-PRE-03",
+            q: "Tìm x: 9 × x = 72",
+            answer: "8",
+            type: "number",
+            explanation: "x = 72 ÷ 9 = 8."
+          },
+          {
+            id: "MATH6-W01-PRE-04",
+            q: "Rút gọn phân số 18/24 về tối giản:",
+            answer: "3/4",
+            type: "fraction",
+            explanation: "Chia cả tử và mẫu cho ƯCLN là 6: 18÷6 / 24÷6 = 3/4."
+          },
+          {
+            id: "MATH6-W01-PRE-05",
+            q: "Tính giá trị biểu thức: 20 + 5 × 4 = ?",
+            answer: "40",
+            type: "number",
+            explanation: "Thực hiện nhân trước: 5 × 4 = 20, sau đó 20 + 20 = 40."
+          }
+        ]
+      },
+      days: [
+        {
+          dayIndex: 1,
+          name: "Thứ 2",
+          title: "Bản chất Phép nhân & Cửu chương 6, 7, 8, 9",
+          theory: "Phép nhân bản chất là phép cộng các số bằng nhau. Khi quên một phép nhân, ta có thể dùng tính chất phân phối: 8 × 7 = 8 × (5 + 2) = 40 + 16 = 56.",
+          exercises: [
+            {
+              id: "MATH6-W01-D01-Q01",
+              question: "Tính nhẩm: 8 × 7 = ?",
+              answer: "56",
+              type: "number",
+              hints: ["Nhẩm 8 × 5 = 40, 8 × 2 = 16 rồi gộp lại."],
+              explanation: "8 × 7 = 56. (Đã được xác thực tự động bởi Server Auto-Patcher).",
+              rubric: "Tính đúng kết quả: 1.0đ."
+            },
+            {
+              id: "MATH6-W01-D01-Q02",
+              question: "Tính nhẩm: 9 × 8 = ?",
+              answer: "72",
+              type: "number",
+              hints: ["Quy tắc ngón tay bảng 9 hoặc nhẩm 9 × 8 = 10 × 8 − 8 = 80 − 8."],
+              explanation: "9 × 8 = 72.",
+              rubric: "Tính đúng kết quả: 1.0đ."
+            },
+            {
+              id: "MATH6-W01-D01-Q03",
+              question: "Tính nhanh bằng cách tách số: 24 × 5 = ?",
+              answer: "120",
+              type: "number",
+              hints: ["24 × 5 = (24 ÷ 2) × (5 × 2) = 12 × 10."],
+              explanation: "24 × 5 = 12 × 10 = 120.",
+              rubric: "Nêu được cách tách chẵn: 0.5đ, kết quả 120: 0.5đ."
+            },
+            {
+              id: "MATH6-W01-D01-Q04",
+              question: "Một kệ sách có 7 ngăn, mỗi ngăn chứa 9 quyển vở. Hỏi kệ có tất cả bao nhiêu quyển vở?",
+              answer: "63",
+              type: "number",
+              hints: ["Phép tính: Số ngăn nhân với số vở mỗi ngăn."],
+              explanation: "Tổng số vở = 7 × 9 = 63 quyển.",
+              rubric: "Lời giải đúng: 0.5đ, phép tính 7 × 9 = 63: 0.5đ."
+            }
+          ]
+        },
+        {
+          dayIndex: 2,
+          name: "Thứ 3",
+          title: "Chiến Lược Tách Số & Bù Tròn Chục",
+          theory: "Để tính nhẩm siêu tốc: Gộp các số bù tròn 10 hoặc 100 trước. Ví dụ: 36 + 64 = 100, 25 × 4 = 100.",
+          exercises: [
+            {
+              id: "MATH6-W01-D02-Q01",
+              question: "Tính nhanh: 37 + 58 + 63 = ?",
+              answer: "158",
+              type: "number",
+              hints: ["Ghép cặp (37 + 63) trước vì tận cùng 7 + 3 = 10."],
+              explanation: "(37 + 63) + 58 = 100 + 58 = 158.",
+              rubric: "Ghép đúng cặp bù 100: 0.5đ, đáp số 158: 0.5đ."
+            },
+            {
+              id: "MATH6-W01-D02-Q02",
+              question: "Tính nhanh: 25 × 17 × 4 = ?",
+              answer: "1700",
+              type: "number",
+              hints: ["Ghép (25 × 4) = 100."],
+              explanation: "(25 × 4) × 17 = 100 × 17 = 1700.",
+              rubric: "Ghép đúng 25 × 4: 0.5đ, đáp số 1700: 0.5đ."
+            },
+            {
+              id: "MATH6-W01-D02-Q03",
+              question: "Tính nhẩm: 100 − 38 = ?",
+              answer: "62",
+              type: "number",
+              hints: ["Số bù của 8 là 2, hàng chục lấy 9 − 3 = 6."],
+              explanation: "100 − 38 = 62.",
+              rubric: "Đáp số 62: 1.0đ."
+            }
+          ]
+        },
+        {
+          dayIndex: 3,
+          name: "Thứ 4",
+          title: "Phép Chia Hết & Chia Có Dư",
+          theory: "Trong phép chia có dư: Số bị chia = Số chia × Thương + Số dư (Số dư luôn nhỏ hơn số chia).",
+          exercises: [
+            {
+              id: "MATH6-W01-D03-Q01",
+              question: "Tìm thương và số dư của phép chia 58 ÷ 7: Nhập kết quả dưới dạng thương,số dư (Ví dụ: 8,2)",
+              answer: "8,2",
+              type: "text",
+              hints: ["7 × 8 = 56, 58 − 56 = 2."],
+              explanation: "58 = 7 × 8 + 2. Thương là 8, dư 2.",
+              rubric: "Tìm đúng thương 8: 0.5đ, số dư 2: 0.5đ."
+            },
+            {
+              id: "MATH6-W01-D03-Q02",
+              question: "Có 45 bông hoa cắm đều vào các lọ, mỗi lọ 6 bông. Hỏi cắm được nhiều nhất bao nhiêu lọ và thừa mấy bông hoa? (Nhập: lọ,bông)",
+              answer: "7,3",
+              type: "text",
+              hints: ["45 ÷ 6 = ? dư ?"],
+              explanation: "45 ÷ 6 = 7 dư 3. Cắm được 7 lọ và thừa 3 bông hoa.",
+              rubric: "Đáp số 7 lọ thừa 3 bông: 1.0đ."
+            }
+          ]
+        },
+        {
+          dayIndex: 4,
+          name: "Thứ 5",
+          title: "Thử Thách Nâng Cao (Nhánh Tự Chọn Mastery)",
+          theory: "Bài toán tính nhanh bằng phân phối ngược: a × b + a × c = a × (b + c).",
+          isOptionalChallenge: true,
+          exercises: [
+            {
+              id: "MATH6-W01-D04-Q01",
+              question: "Tính nhanh: 38 × 64 + 38 × 36 = ?",
+              answer: "3800",
+              type: "number",
+              hints: ["Đặt thừa số chung 38 ra ngoài: 38 × (64 + 36)."],
+              explanation: "38 × (64 + 36) = 38 × 100 = 3800.",
+              rubric: "Đặt thừa số chung 38: 0.5đ, tính 64 + 36 = 100: 0.25đ, đáp số 3800: 0.25đ."
+            },
+            {
+              id: "MATH6-W01-D04-Q02",
+              question: "Tính tổng dãy số cách đều: 2 + 4 + 6 + 8 + ... + 20 = ?",
+              answer: "110",
+              type: "number",
+              hints: ["Số số hạng = (20 − 2) ÷ 2 + 1 = 10. Tổng = (2 + 20) × 10 ÷ 2."],
+              explanation: "Số số hạng: (20 - 2)/2 + 1 = 10. Tổng: (2 + 20) × 10 / 2 = 22 × 5 = 110.",
+              rubric: "Tính số số hạng: 0.5đ, tính tổng 110: 0.5đ."
+            }
+          ]
+        },
+        {
+          dayIndex: 5,
+          name: "Thứ 6",
+          title: "Spot The Bug — Săn Bẫy Tính Nhẩm",
+          theory: "Học từ sai lầm: Đọc kỹ từng bước giải xem bạn nhỏ bị sai từ dòng nào.",
+          exercises: [
+            {
+              id: "MATH6-W01-D05-Q01",
+              question: "Bạn Nam tính: 50 − 20 × 2 = 30 × 2 = 60. Theo Ngân bạn Nam sai từ bước nào? A. Trừ trước nhân sau  B. Nhân 30 với 2 sai  C. Phép tính không có gì sai (Nhập A hoặc B hoặc C)",
+              answer: "A",
+              type: "choice",
+              hints: ["Thứ tự phép tính ưu tiên nhân chia trước, cộng trừ sau."],
+              explanation: "Nam đã thực hiện trừ trước nhân sau (50 - 20 = 30) là sai thứ tự ưu tiên. Đúng là: 50 - (20 × 2) = 50 - 40 = 10.",
+              rubric: "Chọn đúng A: 1.0đ."
+            }
+          ]
+        },
+        {
+          dayIndex: 6,
+          name: "Thứ 7",
+          title: "Weekend Math Exam — Kiểm Tra Tổng Hợp Tuần 1",
+          theory: "Bài kiểm tra tổng hợp cuối tuần: Ôn tập cửu chương, tính nhanh và thứ tự phép tính.",
+          durationMinutes: 30,
+          totalScore: 10,
+          rubricGuide: "Chấm điểm từng bước chi tiết, cho phép chụp ảnh bài làm trong vở để AI Vision chấm.",
+          exercises: [
+            {
+              id: "MATH6-W01-EX-01",
+              question: "Câu 1 (2.0đ): Tính nhanh: a) 47 + 128 + 53   b) 25 × 39 × 4 (Nhập: kq_a,kq_b)",
+              answer: "228,3900",
+              type: "text",
+              explanation: "a) (47 + 53) + 128 = 100 + 128 = 228. b) (25 × 4) × 39 = 100 × 39 = 3900.",
+              rubric: "Đúng câu a: 1.0đ, đúng câu b: 1.0đ."
+            },
+            {
+              id: "MATH6-W01-EX-02",
+              question: "Câu 2 (2.0đ): Tính giá trị biểu thức: 120 − (45 + 15 × 3) = ?",
+              answer: "30",
+              type: "number",
+              explanation: "Trong ngoặc: 15 × 3 = 45 -> 45 + 45 = 90. Ngoài ngoặc: 120 - 90 = 30.",
+              rubric: "Tính đúng 15 × 3 = 45: 0.5đ, tính trong ngoặc = 90: 0.5đ, đáp số 30: 1.0đ."
+            },
+            {
+              id: "MATH6-W01-EX-03",
+              question: "Câu 3 (3.0đ): Tìm x biết: 8 × (x − 5) = 56. Giá trị x là:",
+              answer: "12",
+              type: "number",
+              explanation: "x - 5 = 56 ÷ 8 = 7 -> x = 7 + 5 = 12.",
+              rubric: "x - 5 = 7: 1.5đ, x = 12: 1.5đ."
+            },
+            {
+              id: "MATH6-W01-EX-04",
+              question: "Câu 4 (3.0đ - Tự luận): Lớp 6A có 40 học sinh xếp thành các hàng, mỗi hàng có 6 học sinh. Hỏi xếp được bao nhiêu hàng và còn dư mấy bạn? (Nhập: số_hàng,số_dư)",
+              answer: "6,4",
+              type: "text",
+              explanation: "40 ÷ 6 = 6 dư 4. Xếp được 6 hàng và còn dư 4 học sinh.",
+              rubric: "Lời giải và phép tính đúng: 2.0đ, kết luận đúng 6 hàng dư 4 bạn: 1.0đ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "w02",
+      number: 2,
+      title: "Phân Số & Số Thập Phân Tiểu Học Củng Cố",
+      goal: "Rút gọn phân số, quy đồng mẫu số, 4 phép tính phân số và số thập phân cơ bản.",
+      days: [
+        {
+          dayIndex: 1,
+          name: "Thứ 2",
+          title: "Rút Gọn Phân Số & Phân Số Bằng Nhau",
+          theory: "Khi chia cả tử và mẫu của một phân số cho cùng một ước chung lớn hơn 1, ta được phân số bằng nó nhưng đơn giản hơn.",
+          exercises: [
+            {
+              id: "MATH6-W02-D01-Q01",
+              question: "Rút gọn phân số 24/36 về tối giản (nhập dạng a/b):",
+              answer: "2/3",
+              type: "fraction",
+              hints: ["ƯCLN của 24 và 36 là 12."],
+              explanation: "24 ÷ 12 / 36 ÷ 12 = 2/3.",
+              rubric: "Đáp số 2/3: 1.0đ."
+            },
+            {
+              id: "MATH6-W02-D01-Q02",
+              question: "Rút gọn phân số 45/105 về tối giản:",
+              answer: "3/7",
+              type: "fraction",
+              hints: ["Chia cả tử và mẫu cho 15."],
+              explanation: "45 ÷ 15 / 105 ÷ 15 = 3/7.",
+              rubric: "Đáp số 3/7: 1.0đ."
+            }
+          ]
+        },
+        {
+          dayIndex: 2,
+          name: "Thứ 3",
+          title: "Quy Đồng Mẫu Số & So Sánh Phân Số",
+          theory: "Để so sánh hoặc cộng trừ hai phân số khác mẫu, ta quy đồng về cùng mẫu số chung dương nhỏ nhất.",
+          exercises: [
+            {
+              id: "MATH6-W02-D02-Q01",
+              question: "Quy đồng mẫu số và tính: 1/4 + 2/3 = ? (Nhập phân số tối giản)",
+              answer: "11/12",
+              type: "fraction",
+              hints: ["Mẫu số chung là 12. 1/4 = 3/12, 2/3 = 8/12."],
+              explanation: "3/12 + 8/12 = 11/12.",
+              rubric: "Quy đồng đúng: 0.5đ, cộng ra 11/12: 0.5đ."
+            },
+            {
+              id: "MATH6-W02-D02-Q02",
+              question: "So sánh 3/5 và 5/8: Phân số nào lớn hơn? (Nhập 3/5 hoặc 5/8)",
+              answer: "5/8",
+              type: "fraction",
+              hints: ["Quy đồng mẫu 40: 3/5 = 24/40, 5/8 = 25/40."],
+              explanation: "24/40 < 25/40 nên 5/8 > 3/5.",
+              rubric: "Kết luận đúng 5/8: 1.0đ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: "w03",
+      number: 3,
+      title: "Thứ Tự Phép Tính & Bẫy Dấu Ngoặc",
+      goal: "Làm chủ quy tắc thực hiện phép tính: Lũy thừa -> Nhân chia -> Cộng trừ; thứ tự ngoặc tròn, vuông, nhọn.",
+      days: [
+        {
+          dayIndex: 1,
+          name: "Thứ 2",
+          title: "Quy Tắc Thứ Tự Thực Hiện Phép Tính",
+          theory: "1. Trong ngoặc trước, ngoài ngoặc sau: () -> [] -> {}. 2. Thứ tự: Lũy thừa -> Nhân và Chia -> Cộng và Trừ (từ trái qua phải).",
+          exercises: [
+            {
+              id: "MATH6-W03-D01-Q01",
+              question: "Tính giá trị: 50 − 3 × 4 + 8 = ?",
+              answer: "46",
+              type: "number",
+              hints: ["Thực hiện nhân trước: 3 × 4 = 12. Sau đó: 50 − 12 + 8."],
+              explanation: "50 - 12 + 8 = 38 + 8 = 46.",
+              rubric: "Nhân trước đúng: 0.5đ, tính từ trái qua phải ra 46: 0.5đ."
+            },
+            {
+              id: "MATH6-W03-D01-Q02",
+              question: "Tính giá trị: 100 ÷ [ 5 × (14 − 12) ] = ?",
+              answer: "10",
+              type: "number",
+              hints: ["Trong ngoặc tròn trước: 14 − 12 = 2. Sau đó trong ngoặc vuông: 5 × 2 = 10."],
+              explanation: "14 - 12 = 2 -> 5 × 2 = 10 -> 100 ÷ 10 = 10.",
+              rubric: "Tính đúng ngoặc tròn và vuông: 0.5đ, kết quả 10: 0.5đ."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};

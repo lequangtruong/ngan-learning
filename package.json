@@ -1,0 +1,15 @@
+{
+  "name": "ngan-learning-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nền tảng học Toán Lớp 6 Nâng Cao & Rèn Luyện Tư Duy cho Ngân (Tối ưu iPad Air M1 10.9 inch)",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check server.mjs && node --check data/data-core.js && node --check data/curriculum-registry.js && node --check data/diagnostic-assessment.js && node --check js/core.js && node --check js/touch-keypad.js && node --check js/keyboard-adapt.js && node --check js/image-compressor.js && node --check js/parent-feedback.js && node --check js/competency-engine.js && node --check js/game-registry.js && node --check js/render-views.js && node --check js/games/rush-hour.js && node --check js/games/spatial-3d.js && node --check js/games/tangram.js && node --check js/games/chimp-memory.js && node --check js/games/logic-grid.js && node --check js/games/bar-model.js && node --check js/games/balance-detective.js && node --check sw.js",
+    "test": "npm run check && node --test test/*.test.mjs && npm run test:mock",
+    "test:mock": "node scripts/mock-test-all-buttons.mjs",
+    "audit:curriculum": "node scripts/audit-math6-curriculum.mjs"
+  },
+  "dependencies": {}
+}

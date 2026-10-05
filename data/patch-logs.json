@@ -1,0 +1,599 @@
+[
+  {
+    "ticketId": "AUTO-FIX-1791187920386",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791187920386.bak",
+    "patchedAt": "2026-10-05T08:12:00.446Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791142462600",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791142462600.bak",
+    "patchedAt": "2026-10-04T19:34:22.664Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791142084912",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791142084912.bak",
+    "patchedAt": "2026-10-04T19:28:04.972Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791141897324",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791141897324.bak",
+    "patchedAt": "2026-10-04T19:24:57.377Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791141788967",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791141788967.bak",
+    "patchedAt": "2026-10-04T19:23:09.028Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791141595907",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791141595907.bak",
+    "patchedAt": "2026-10-04T19:19:55.966Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791141375210",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791141375210.bak",
+    "patchedAt": "2026-10-04T19:16:15.265Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791141064771",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791141064771.bak",
+    "patchedAt": "2026-10-04T19:11:04.836Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791140473817",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791140473817.bak",
+    "patchedAt": "2026-10-04T19:01:13.872Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791140296388",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791140296388.bak",
+    "patchedAt": "2026-10-04T18:58:16.445Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791140089915",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791140089915.bak",
+    "patchedAt": "2026-10-04T18:54:49.966Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791139857769",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791139857769.bak",
+    "patchedAt": "2026-10-04T18:50:57.836Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791139514822",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791139514822.bak",
+    "patchedAt": "2026-10-04T18:45:14.879Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791139274663",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791139274663.bak",
+    "patchedAt": "2026-10-04T18:41:14.717Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791139045693",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791139045693.bak",
+    "patchedAt": "2026-10-04T18:37:25.746Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791138655020",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791138655020.bak",
+    "patchedAt": "2026-10-04T18:30:55.081Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791136484212",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791136484212.bak",
+    "patchedAt": "2026-10-04T17:54:44.275Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791135953252",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791135953252.bak",
+    "patchedAt": "2026-10-04T17:45:53.309Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791135783350",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791135783350.bak",
+    "patchedAt": "2026-10-04T17:43:03.404Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791135629343",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791135629343.bak",
+    "patchedAt": "2026-10-04T17:40:29.399Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791135316126",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791135316126.bak",
+    "patchedAt": "2026-10-04T17:35:16.183Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791134837399",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791134837399.bak",
+    "patchedAt": "2026-10-04T17:27:17.456Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791134437274",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791134437274.bak",
+    "patchedAt": "2026-10-04T17:20:37.331Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791134036755",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791134036755.bak",
+    "patchedAt": "2026-10-04T17:13:56.812Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791133880718",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791133880718.bak",
+    "patchedAt": "2026-10-04T17:11:20.774Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791132468299",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791132468299.bak",
+    "patchedAt": "2026-10-04T16:47:48.355Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791132442996",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791132442996.bak",
+    "patchedAt": "2026-10-04T16:47:23.051Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791132413687",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791132413687.bak",
+    "patchedAt": "2026-10-04T16:46:53.743Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791132281803",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791132281803.bak",
+    "patchedAt": "2026-10-04T16:44:41.861Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791132163161",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791132163161.bak",
+    "patchedAt": "2026-10-04T16:42:43.216Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791131973048",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791131973048.bak",
+    "patchedAt": "2026-10-04T16:39:33.113Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791131967008",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791131967008.bak",
+    "patchedAt": "2026-10-04T16:39:27.073Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791131934625",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791131934625.bak",
+    "patchedAt": "2026-10-04T16:38:54.685Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791131581140",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791131581140.bak",
+    "patchedAt": "2026-10-04T16:33:01.211Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791131081685",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791131081685.bak",
+    "patchedAt": "2026-10-04T16:24:41.745Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791130738573",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791130738573.bak",
+    "patchedAt": "2026-10-04T16:18:58.630Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791129293796",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791129293796.bak",
+    "patchedAt": "2026-10-04T15:54:53.855Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791129270570",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "",
+    "parentProposedFix": "56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Xác nhận tự động qua E2E Button Mock Test)"
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791129270570.bak",
+    "patchedAt": "2026-10-04T15:54:30.633Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "AUTO-FIX-1791125565022",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "SAI_DAP_AN",
+    "description": "Đáp án câu này phải là 56",
+    "parentProposedFix": "Đáp án câu này phải là 56",
+    "appliedPatch": {},
+    "backupFile": "data/backups/mod-01-foundation.js.1791125565022.bak",
+    "patchedAt": "2026-10-04T14:52:45.134Z",
+    "status": "VERIFIED_OK"
+  },
+  {
+    "ticketId": "FB-TEST-001",
+    "questionId": "MATH6-W01-D01-Q01",
+    "file": "data/modules/mod-01-foundation.js",
+    "errorType": "PHỤ_HUYNH_YÊU_CẦU",
+    "description": "Thử nghiệm server tự động sửa code",
+    "parentProposedFix": "Sửa đáp án thành: 56",
+    "appliedPatch": {
+      "answer": "56",
+      "explanation": "8 × 7 = 56. (Đã được xác thực tự động bởi Server Auto-Patcher)."
+    },
+    "backupFile": "data/backups/mod-01-foundation.js.1791123108257.bak",
+    "patchedAt": "2026-10-04T14:11:48.341Z",
+    "status": "VERIFIED_OK"
+  }
+]
