@@ -8,10 +8,10 @@ console.log(`Tiêu đề: ${meta.title} - ${meta.subtitle}`);
 console.log(`Chuẩn: ${meta.textbook}`);
 
 const weeks = getAllWeeks();
-console.log(`Tổng số tuần học tìm thấy: ${weeks.length} / 24 tuần.`);
+console.log(`Tổng số tuần học tìm thấy: ${weeks.length} / 30 tuần.`);
 
-if (weeks.length < 24) {
-  console.error(`[CẢNH BÁO] Số tuần hiện tại (${weeks.length}) chưa đủ 24 tuần!`);
+if (weeks.length < 30) {
+  console.error(`[CẢNH BÁO] Số tuần hiện tại (${weeks.length}) chưa đủ 30 tuần!`);
 }
 
 let totalExercises = 0;
@@ -72,7 +72,7 @@ console.log(`Tổng số câu hỏi đánh giá hợp lệ: ${totalExercises} c�
 console.log(`Số ID câu hỏi bất biến duy nhất: ${seenQuestionIds.size}.`);
 
 if (errorCount === 0) {
-  console.log("✔ TOÀN BỘ GIÁO TRÌNH 24 TUẦN ĐẠT CHUẨN KỸ THUẬT & SƯ PHẠM GDPT 2018!");
+  console.log("✔ TOÀN BỘ GIÁO TRÌNH 30 TUẦN ĐẠT CHUẨN KỸ THUẬT & SƯ PHẠM GDPT 2018!");
   process.exit(0);
 } else {
   console.error(`❌ Phát hiện ${errorCount} lỗi trong giáo trình cần khắc phục.`);

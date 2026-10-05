@@ -9,6 +9,7 @@ import { MODULE_06_SYMMETRY } from "./modules/mod-06-symmetry.js";
 import { MODULE_07_STATISTICS } from "./modules/mod-07-statistics.js";
 import { MODULE_08_PROBABILITY } from "./modules/mod-08-probability.js";
 import { MODULE_09_ALGEBRA_OLYMPIAD } from "./modules/mod-09-algebra-olympiad.js";
+import { MODULE_10_OLYMPIAD_ADVANCED } from "./modules/mod-10-olympiad-advanced.js";
 
 // Danh mục tất cả các module bài học đã đăng ký trong hệ thống
 const registeredModules = [
@@ -20,7 +21,8 @@ const registeredModules = [
   MODULE_06_SYMMETRY,
   MODULE_07_STATISTICS,
   MODULE_08_PROBABILITY,
-  MODULE_09_ALGEBRA_OLYMPIAD
+  MODULE_09_ALGEBRA_OLYMPIAD,
+  MODULE_10_OLYMPIAD_ADVANCED
 ];
 
 /**

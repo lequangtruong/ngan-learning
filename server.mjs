@@ -240,7 +240,18 @@ const server = http.createServer(async (req, res) => {
   if (req.method === "POST" && pathname === "/api/parent-feedback/patch") {
     try {
       const body = await readJsonBody(req);
-      const { ticketId, questionId, targetFile, errorType, description, parentProposedFix, patchData } = body;
+      const { ticketId, questionId, targetFile, errorType, description, parentProposedFix, patchData, parentPin } = body;
+
+      // Bảo mật phân quyền: Xác thực mã PIN Phụ huynh (hoặc Header x-parent-pin)
+      const pin = req.headers["x-parent-pin"] || parentPin;
+      const expectedPin = process.env.PARENT_ADMIN_PIN || "2026";
+      if (process.env.NODE_ENV === "production" || pin) {
+        if (!pin || String(pin).trim() !== String(expectedPin)) {
+          res.writeHead(403, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ success: false, error: "Bảo mật: Yêu cầu mã PIN Phụ huynh (2026) để sửa mã nguồn hệ thống." }));
+          return;
+        }
+      }
 
       if (!questionId || typeof questionId !== "string" || !/^MATH6-W\d{1,2}-D\d{1,2}-Q\d{1,2}$/i.test(questionId)) {
         res.writeHead(400, { "Content-Type": "application/json" });
@@ -387,24 +398,23 @@ const server = http.createServer(async (req, res) => {
         // (Bảo đảm bí mật API Key không bao giờ lộ về trình duyệt của học sinh)
       }
 
-      // Giả lập/Phản hồi chấm bài học chuẩn theo tiêu chí sư phạm (không suy đoán, có độ tin cậy)
-      const mockResult = {
-        status: "GRADED",
-        confidence: 0.94,
-        scorePercent: 100,
-        awardedPoints: 1.0,
-        totalPoints: 1.0,
-        lines: [
-          { line: 1, text: "Xác định phép tính và thứ tự ưu tiên", status: "CORRECT", note: "Bước đặt phép tính chuẩn xác" },
-          { line: 2, text: `Thực hiện tính nhẩm và rút gọn: ${expectedAnswer || 'Chuẩn'}`, status: "CORRECT", note: "Đáp số khớp đáp án barem" }
-        ],
-        advice: "Trình bày rõ ràng, chữ viết và số liệu ngay ngắn. Rất tốt!",
-        canResubmit: false
-      };
-
-      res.writeHead(200, { "Content-Type": "application/json" });
-      res.end(JSON.stringify(mockResult));
-      return;
+      // Phản hồi trung thực sư phạm: Nếu chưa có GEMINI_API_KEY thì không được làm giả điểm 100%
+      if (!process.env.GEMINI_API_KEY) {
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({
+          status: "MANUAL_REVIEW_REQUIRED",
+          confidence: 0,
+          scorePercent: null,
+          awardedPoints: null,
+          totalPoints: 1.0,
+          lines: [
+            { line: 1, text: "Đã tiếp nhận và lưu ảnh bài làm trong vở của học sinh", status: "SAVED", note: "Chờ phụ huynh hoặc giáo viên đối soát" }
+          ],
+          advice: "Server chưa kích hoạt GEMINI_API_KEY để tự động chấm điểm qua AI Vision. Ảnh bài làm đã được lưu để phụ huynh/thầy cô đối soát trực tiếp trong vở.",
+          canResubmit: true
+        }));
+        return;
+      }
     } catch (err) {
       res.writeHead(500, { "Content-Type": "application/json" });
       res.end(JSON.stringify({ error: err.message }));

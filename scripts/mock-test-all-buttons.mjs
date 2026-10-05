@@ -170,7 +170,7 @@ try {
 // TEST CASE 5: Math Lesson Feedback Submission & Question Locator
 console.log("\n[TEST 5] Kiểm tra Nút Báo Lỗi Câu Hỏi & Form Phản Hồi Trực Tiếp...");
 const allWeeks = getAllWeeks();
-assert.equal(allWeeks.length, 24, "Phải có đúng 24 tuần học");
+assert.equal(allWeeks.length, 30, "Phải có đúng 30 tuần học");
 
 const w1 = getWeek(1);
 assert.ok(w1.days.length >= 6, "Tuần 1 phải có ít nhất 6 ngày học");

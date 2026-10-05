@@ -171,13 +171,14 @@ export function renderHome(container, state) {
   const mqi = calculateMQI(state.competencyMetrics);
   const activeW = getWeek(state.activeWeek || 1) || weeks[0];
 
-  // 5 Chuyên đề cốt lõi lớp 6 theo chuẩn GDPT 2018
+  // 6 Chuyên đề cốt lõi lớp 6 theo chuẩn GDPT 2018 & Đấu trường Olympic
   const modulesOverview = [
     { id: "mod1", title: "Chuyên Đề 1: Nền Tảng Số Học & Lũy Thừa", icon: "🌿", range: "Tuần 01 - 04", weekNumbers: [1, 2, 3, 4] },
     { id: "mod2", title: "Chuyên Đề 2: Số Nguyên Z, Ước & Bội Số", icon: "⚓", range: "Tuần 05 - 09", weekNumbers: [5, 6, 7, 8, 9] },
     { id: "mod3", title: "Chuyên Đề 3: Phân Số & Số Thập Phân Thực Tế", icon: "📊", range: "Tuần 10 - 12", weekNumbers: [10, 11, 12] },
     { id: "mod4", title: "Chuyên Đề 4: Hình Học Phẳng, Đối Xứng & 3D", icon: "📐", range: "Tuần 13 - 18", weekNumbers: [13, 14, 15, 16, 17, 18] },
-    { id: "mod5", title: "Chuyên Đề 5: Thống Kê, Xác Suất & Chinh Phục Olympic", icon: "🏆", range: "Tuần 19 - 24", weekNumbers: [19, 20, 21, 22, 23, 24] }
+    { id: "mod5", title: "Chuyên Đề 5: Thống Kê & Xác Suất Thực Nghiệm", icon: "📈", range: "Tuần 19 - 24", weekNumbers: [19, 20, 21, 22, 23, 24] },
+    { id: "mod6", title: "Chuyên Đề 6: Đột Phá Năng Lực & Đấu Trường Olympic", icon: "👑", range: "Tuần 25 - 30", weekNumbers: [25, 26, 27, 28, 29, 30] }
   ];
 
   container.innerHTML = `
@@ -245,11 +246,11 @@ export function renderHome(container, state) {
       <section class="section-weeks-overview">
         <div class="section-head">
           <div>
-            <h2>📚 Lộ Trình 24 Tuần Học Trọng Tâm</h2>
+            <h2>📚 Lộ Trình 30 Tuần Học Trọng Tâm</h2>
             <p class="text-muted">Bám sát 100% chương trình GDPT 2018 (SGK Kết nối tri thức & Cánh diều) kèm chuyên đề Olympic</p>
           </div>
           <div class="curriculum-summary-pill">
-            <span>24 Tuần</span> · <span>144 Buổi Học</span> · <span>5 Chuyên Đề</span>
+            <span>30 Tuần</span> · <span>Luyện Tập Chuyên Sâu</span> · <span>6 Chuyên Đề</span>
           </div>
         </div>
 
@@ -383,7 +384,7 @@ export function renderMath(container, state, params = {}) {
               </div>
             `}
             <div class="theory-meta-stats">
-              <div class="t-stat"><span>🎯 Mục tiêu:</span> <b>${(currentDay.exercises || []).length} bài tập</b></div>
+              <div class="t-stat"><span>🎯 Mục tiêu:</span> <b>${(currentDay.exercises || []).length} bài tập ${state.diagnosticResult?.level === "OLYMPIAD_TALENT" ? '🏆 (Chế độ Olympic)' : ''}</b></div>
               <div class="t-stat"><span>✨ Yêu cầu:</span> <b>Trình bày chuẩn, tính toán chính xác</b></div>
             </div>
           </div>
@@ -391,18 +392,32 @@ export function renderMath(container, state, params = {}) {
 
         <section class="lesson-exercises-pane" aria-label="Danh sách bài tập và lời giải">
 
-        <!-- Danh sách bài tập -->
+        <!-- Danh sách bài tập thích ứng theo năng lực khảo sát đầu vào -->
         <div class="exercises-container">
-          ${(currentDay.exercises || []).map((ex, idx) => {
-            const saved = state.lessonResponses?.[ex.id] || {};
-            return `
-              <div class="exercise-item-card ${saved.correct ? 'is-answered-correct' : ''}" id="card_${ex.id}" data-qid="${ex.id}">
-                <div class="ex-head">
-                  <span class="ex-index">Bài ${idx + 1}</span>
-                  <span class="ex-id-tag">Mã: ${ex.id}</span>
-                  <button type="button" class="btn-report-issue" data-report-qid="${ex.id}" title="Phụ huynh báo lỗi câu này">⚠️ Báo lỗi</button>
-                </div>
-                <div class="ex-question">${escapeHtml(ex.question)}</div>
+          ${(() => {
+            const isOlympiad = state.diagnosticResult?.level === "OLYMPIAD_TALENT";
+            const rawExercises = currentDay.exercises || [];
+            const activeExercises = isOlympiad
+              ? [...rawExercises].sort((a, b) => {
+                  const order = { olympiad: 0, advanced: 1, medium: 2, basic: 3 };
+                  return (order[a.level] ?? 2) - (order[b.level] ?? 2);
+                })
+              : rawExercises;
+
+            return activeExercises.map((ex, idx) => {
+              const saved = state.lessonResponses?.[ex.id] || {};
+              const isOlympiadQ = ex.level === "olympiad";
+              const isAdvancedQ = ex.level === "advanced";
+              return `
+                <div class="exercise-item-card ${saved.correct ? 'is-answered-correct' : ''} ${isOlympiadQ ? 'card-olympiad' : ''}" id="card_${ex.id}" data-qid="${ex.id}">
+                  <div class="ex-head">
+                    <span class="ex-index">Bài ${idx + 1}</span>
+                    <span class="ex-id-tag">Mã: ${ex.id}</span>
+                    ${isOlympiadQ ? '<span class="badge-tag-olympiad">🏆 Olympic</span>' : ''}
+                    ${isAdvancedQ ? '<span class="badge-tag-advanced">⚡ Nâng Cao</span>' : ''}
+                    <button type="button" class="btn-report-issue" data-report-qid="${ex.id}" title="Phụ huynh báo lỗi câu này">⚠️ Báo lỗi</button>
+                  </div>
+                  <div class="ex-question">${escapeHtml(ex.question)}</div>
 
                 <div class="ex-interactive-row">
                   <div class="input-wrap">
@@ -453,7 +468,8 @@ export function renderMath(container, state, params = {}) {
                 ` : ''}
               </div>
             `;
-          }).join("")}
+          }).join("");
+          })()}
         </div>
 
         <!-- Phần Báo Lỗi & Góp Ý Trực Tiếp Dưới Cùng Bài Học (Thu gọn mặc định) -->

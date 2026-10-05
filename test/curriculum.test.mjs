@@ -3,11 +3,11 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { getAllWeeks, getWeek, findQuestionById, getCurriculumMeta } from "../data/curriculum-registry.js";
 
-test("Curriculum Registry should have exactly 24 weeks", () => {
+test("Curriculum Registry should have exactly 30 weeks", () => {
   const weeks = getAllWeeks();
-  assert.equal(weeks.length, 24);
+  assert.equal(weeks.length, 30);
   assert.equal(weeks[0].number, 1);
-  assert.equal(weeks[23].number, 24);
+  assert.equal(weeks[29].number, 30);
 });
 
 test("Curriculum Metadata should conform to Grade 6 Math", () => {

@@ -44,11 +44,11 @@ export function renderRadarChartSvg(metrics, size = 260) {
   const center = size / 2;
   const radius = size * 0.38;
   const axes = [
-    { label: "Tính Nhẩm", value: metrics.fluency || 400, angle: -Math.PI / 2 },
-    { label: "Đại Số", value: metrics.algebra || 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 1 },
-    { label: "Hình Học", value: metrics.geometry || 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 2 },
-    { label: "Logic", value: metrics.logic || 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 3 },
-    { label: "Bền Bỉ", value: metrics.resilience || 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 4 }
+    { label: "Tính Nhẩm", value: metrics.fluency ?? 400, angle: -Math.PI / 2 },
+    { label: "Đại Số", value: metrics.algebra ?? 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 1 },
+    { label: "Hình Học", value: metrics.geometry ?? 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 2 },
+    { label: "Logic", value: metrics.logic ?? 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 3 },
+    { label: "Bền Bỉ", value: metrics.resilience ?? 400, angle: -Math.PI / 2 + (2 * Math.PI / 5) * 4 }
   ];
 
   // Vẽ các vòng lưới đồng tâm (20%, 40%, 60%, 80%, 100%)
